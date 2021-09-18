@@ -11,6 +11,9 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 ol, ul {
 	list-style: none;
 }
@@ -57,7 +60,7 @@ br.clear {
 .wrapper {
 	width: 90%;
 	margin: 0 auto;
-	max-width:1200px;
+	max-width:1400px;
 }
 .flex-wrapper {
 	display: flex;
@@ -85,13 +88,7 @@ br.clear {
     src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
     font-weight: 600;
     font-style: normal
-}
-
-@font-face {
-    font-family: 'GT-Eesti';
-    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
-    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
-    font-weight: 700;
+}	/* color: #000; */
     font-style: normal
 }
 ::placeholder {
@@ -105,4 +102,111 @@ br.clear {
 
 ::-ms-input-placeholder {
   color: #9B9B9B;
+}
+
+#home {
+	background: url("../images/header-background.jpg") no-repeat right 0 top -200px;
+}
+#home header {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+#home header h1 {
+	
+}
+#home header h1 a {
+	display: flex;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 31px;
+}
+#home header h1 a img {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 0.3em;
+}
+#home header nav {
+	
+}
+#home header nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#home header nav ul li {
+	margin-right: 15px;
+}
+#home header nav ul li:last-child{
+	margin-right: 0;
+}
+#home header nav ul li a {
+	font-weight: 500;
+	color: #000;
+	font-size: 21px;
+	color: #fff;
+}
+#home header nav ul li.drop-down {
+}
+#home header nav ul li.drop-down a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#home header nav ul li.drop-down a img {
+	display: inline-block;
+	margin-left: .5em;
+	width: 10px;
+}
+#home header nav ul li.social a {
+	
+}
+#home header nav ul li.social a img {
+	width: 30px;
+}
+#home div.spotlight {
+	padding: 15% 10%;
+	display: flex;
+	justify-content: space-between;
+}
+#home div.spotlight div.left {
+	width: 60%;
+}
+#home div.spotlight div.left h2 {
+	font-size: 56px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #57bad2;
+	margin-bottom: 5px;
+}
+#home div.spotlight div.left h3 {
+	font-size: 56px;
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+#home div.spotlight div.left p {
+	color: #8b8b8b;
+	font-size: 24px;
+	max-width: 600px;
+	margin-bottom: 25px;
+}
+#home div.spotlight div.left a.button {
+	text-transform: uppercase;
+	font-size: 21px;
+	padding: 15px 60px;
+	background: #4ebbd5;
+	color: #fff;
+	border-radius: 23px;
+}
+#home div.spotlight div.right {
+	width: 40%;
+}
+#home div.spotlight div.right div.thumb {
+
+}
+#home div.spotlight div.right div.thumb img {
+
 }
